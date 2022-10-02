@@ -8,7 +8,7 @@ Image anomaly detection aims to detect out-of-distribution instances. Most exist
 Python: 3.6
 Install all packages with:
 ```
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Datasets
@@ -36,6 +36,11 @@ Please set the `c.dataset_path` in `config.py` before training models.
 Use `main.py` to train models for different datasets and classes.
 ```
 python main.py --dataset=DATASET --class-name=CLASS_NAME 
+```
+We set tensorboard for tracking training process:
+```
+tensorboard --logdir logdir
+
 ```
 
 ## Testing Pretrained Models
